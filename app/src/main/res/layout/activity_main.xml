@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="伪装移动数据"
+            android:textSize="26sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="24dp" />
+
+        <Switch
+            android:id="@+id/sw_enable"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="启用伪装"
+            android:textSize="18sp"
+            android:layout_marginBottom="20dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="运营商名称"
+            android:textSize="14sp"
+            android:textColor="#888888"
+            android:layout_marginBottom="6dp" />
+
+        <EditText
+            android:id="@+id/et_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="例如：中国电信"
+            android:singleLine="true"
+            android:layout_marginBottom="20dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="网络类型"
+            android:textSize="14sp"
+            android:textColor="#888888"
+            android:layout_marginBottom="6dp" />
+
+        <Spinner
+            android:id="@+id/sp_type"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="信号格数（0 - 4）"
+            android:textSize="14sp"
+            android:textColor="#888888"
+            android:layout_marginBottom="6dp" />
+
+        <SeekBar
+            android:id="@+id/sb_level"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:max="4"
+            android:layout_marginBottom="4dp" />
+
+        <TextView
+            android:id="@+id/tv_level"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="4/4"
+            android:textSize="16sp"
+            android:textColor="#2E7D32"
+            android:layout_marginBottom="24dp" />
+
+        <Button
+            android:id="@+id/btn_save"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="保存" />
+
+        <Button
+            android:id="@+id/btn_kill"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="重启系统界面（免重启手机）"
+            android:layout_marginTop="12dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="提示：保存后点上面的按钮让设置立即生效。
+部分机型 5G 图标会带漫游 R 角标，属正常现象。"
+            android:textSize="13sp"
+            android:textColor="#888888"
+            android:layout_marginTop="20dp" />
+    </LinearLayout>
+</ScrollView>
